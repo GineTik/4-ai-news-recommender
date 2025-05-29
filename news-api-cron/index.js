@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-cron.schedule("*/1 * * * *", async () => {
+cron.schedule("*/30 * * * *", async () => {
   console.log("running a task every 30 minutes");
   try {
     const response = await axios.get(process.env.FETCH_NEWS_URL);

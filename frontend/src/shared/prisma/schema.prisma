@@ -1,0 +1,42 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../../../generated/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model News {
+  id        Int     @id @default(autoincrement())
+  image     String?
+  title     String
+  content   String? @db.MediumText
+  description String? @db.MediumText
+  publishedAt DateTime @default(now())
+  originalUrl String?
+
+  sourceId Int?
+  source   Source? @relation(fields: [sourceId], references: [id])
+
+  categories Category[]
+}
+
+model Source {
+  id        Int     @id @default(autoincrement())
+  name      String  @unique
+  homepageUrl       String
+
+  news      News[]
+}
+
+model Category {
+  id        Int     @id @default(autoincrement())
+  name      String  @unique
+  label     String?
+  description String?
+  lucideIconName String?
+
+  news      News[]
+}

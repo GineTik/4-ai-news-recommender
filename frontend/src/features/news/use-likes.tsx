@@ -1,4 +1,4 @@
-import { likeNews, unlikeNews } from "@/shared/services";
+import { likeNews, unlikeNews } from "@/shared/business-logic";
 import { useQueryClient } from "@tanstack/react-query";
 import { NEWS_QUERY_KEY } from "./use-news";
 export const useLikeNews = (newsId: number) => {

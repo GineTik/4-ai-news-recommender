@@ -1,9 +1,9 @@
-import { getNews, getPersonalizedNews } from "@/shared/services";
-import { getInterests } from "@/shared/services";
+import { getNews, getPersonalizedNews } from "@/shared/business-logic";
+import { getInterests } from "@/shared/business-logic";
 import { useInfiniteQuery } from "@tanstack/react-query";
-import { getBookmarks, getLikes } from "@/shared/services";
+import { getBookmarks, getLikes } from "@/shared/business-logic";
 import { toast } from "sonner";
-import { NewsFilters } from "@/shared/services/types";
+import { NewsFilters } from "@/shared/business-logic/types";
 export const NEWS_QUERY_KEY = "news";
 
 export const useNews = (filters: Omit<NewsFilters, "page">) => {
@@ -29,7 +29,10 @@ export const useNews = (filters: Omit<NewsFilters, "page">) => {
 
         return await getPersonalizedNews(interests, pageFilters).catch(
           (error) => {
-            toast.error("Безкоштовні запити вичерпані (100 запитів на день)");
+            toast.error(
+              "Безкоштовні запити вичерпані (100 запитів на день) " +
+                error.status
+            );
             throw error;
           }
         );

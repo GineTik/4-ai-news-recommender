@@ -1,7 +1,7 @@
 "use server";
 
 import { NextResponse } from "next/server";
-import { addNews } from "@/shared/services";
+import { addNews } from "@/shared/business-logic";
 
 export async function POST(req: Request) {
   try {

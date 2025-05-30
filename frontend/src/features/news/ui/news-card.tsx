@@ -7,7 +7,7 @@ import {
   likeNews,
   removeBookmark,
   addBookmark,
-} from "@/shared/services";
+} from "@/shared/business-logic";
 import { Card, Button, CardTitle, CardContent, CardFooter } from "@/shared/ui";
 import { ExternalLinkIcon, HeartIcon, BookmarkIcon } from "lucide-react";
 import { useState } from "react";

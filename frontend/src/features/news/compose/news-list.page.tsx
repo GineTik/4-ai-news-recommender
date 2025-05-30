@@ -8,7 +8,7 @@ import { NewsListLayout } from "../ui/news-list.layout";
 import { NewsFilters } from "../ui/news-filters";
 import { CategoryList } from "../ui/category-list";
 import { NewsList } from "../ui/news-list";
-import { NewsFiltersWithoutPage } from "@/shared/services";
+import { NewsFiltersWithoutPage } from "@/shared/business-logic";
 
 export const NewsListPage = () => {
   const [filters, setFilters] = useState<NewsFiltersWithoutPage>({});

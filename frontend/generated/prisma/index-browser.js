@@ -150,29 +150,14 @@ exports.Prisma.SortOrder = {
   desc: 'desc'
 };
 
+exports.Prisma.QueryMode = {
+  default: 'default',
+  insensitive: 'insensitive'
+};
+
 exports.Prisma.NullsOrder = {
   first: 'first',
   last: 'last'
-};
-
-exports.Prisma.NewsOrderByRelevanceFieldEnum = {
-  image: 'image',
-  title: 'title',
-  content: 'content',
-  description: 'description',
-  originalUrl: 'originalUrl'
-};
-
-exports.Prisma.SourceOrderByRelevanceFieldEnum = {
-  name: 'name',
-  homepageUrl: 'homepageUrl'
-};
-
-exports.Prisma.CategoryOrderByRelevanceFieldEnum = {
-  name: 'name',
-  label: 'label',
-  description: 'description',
-  lucideIconName: 'lucideIconName'
 };
 
 

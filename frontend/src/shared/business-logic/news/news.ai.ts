@@ -1,4 +1,4 @@
-import { writeToAIModel } from "@/shared/ai";
+import { writeToAIModel } from "@/shared/ai-api";
 import { Category, News, NewsResponse } from "../types";
 import { mapToAiInputData } from "./news.mapper";
 

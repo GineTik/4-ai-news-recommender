@@ -17,7 +17,7 @@ import { DynamicIcon, dynamicIconImports } from "lucide-react/dynamic";
 import {
   getInterests,
   setInterests,
-} from "@/shared/services/interests.service";
+} from "@/shared/business-logic/interests.service";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import { ROUTES } from "@/shared/constants";

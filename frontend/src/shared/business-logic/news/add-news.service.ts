@@ -2,7 +2,7 @@
 
 import { prisma } from "@/shared/prisma";
 import { NewsResponse } from "../types";
-import { Category } from "@/shared/services";
+import { Category } from "@/shared/business-logic";
 import { PrismaClient } from "../../../../generated/prisma";
 import { ITXClientDenyList } from "../../../../generated/prisma/runtime/library";
 import { categoryRepository } from "../category/category.repository";

@@ -3,7 +3,7 @@
 # Build the Docker image
 docker build -t ginetik/4-ai-news-recommender-frontend:latest \
   --build-arg DATABASE_URL=mysql://root:XuiamXPKOKmGxtqbnssEBIKaVgTWoAEc@shortline.proxy.rlwy.net:43546/railway \
-  --build-arg OPEN_ROUTER_API_KEY=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 \
+  --build-arg OPEN_ROUTER_API_KEY=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 \
   ./
 
 # Push the Docker image to Docker Hub

@@ -1,7 +1,15 @@
 {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.codeActionsOnSave": {
-        "source.fixAll": "always"
-    }
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always"
+  },
+  "editor.lineNumbers": "relative",
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#fff",
+    "activityBarBadge.background": "#e9dbb7",
+    "activityBarBadge.foreground": "#262626",
+    "statusBar.background": "#262626",
+    "statusBar.foreground": "#e9dbb7"
+  }
 }

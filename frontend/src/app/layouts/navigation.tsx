@@ -8,7 +8,7 @@ import {
   NavigationMenuTrigger,
 } from "@/shared/ui";
 import { DynamicIcon, dynamicIconImports } from "lucide-react/dynamic";
-import { Category } from "@/shared/services";
+import { Category } from "@/shared/business-logic";
 
 type HeaderNavigationProps = {
   categories: Category[];

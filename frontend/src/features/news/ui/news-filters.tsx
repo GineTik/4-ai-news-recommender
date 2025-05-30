@@ -1,6 +1,6 @@
 import { Label } from "@/shared/ui";
 import { Switch } from "@/shared/ui";
-import { NewsFiltersWithoutPage } from "@/shared/services";
+import { NewsFiltersWithoutPage } from "@/shared/business-logic";
 import { Dispatch, SetStateAction } from "react";
 
 export const NewsFilters = ({

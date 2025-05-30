@@ -4,7 +4,7 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
@@ -12,8 +12,8 @@ model News {
   id        Int     @id @default(autoincrement())
   image     String?
   title     String
-  content   String? @db.MediumText
-  description String? @db.MediumText
+  content   String?
+  description String?
   publishedAt DateTime @default(now())
   originalUrl String?
 

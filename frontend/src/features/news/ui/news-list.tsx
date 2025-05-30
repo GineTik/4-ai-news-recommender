@@ -1,6 +1,6 @@
 import { LoadingButton, Skeleton } from "@/shared/ui";
-import { isBookmarked } from "@/shared/services/bookmark.service";
-import { isLiked, News } from "@/shared/services";
+import { isBookmarked } from "@/shared/business-logic/bookmark.service";
+import { isLiked, News } from "@/shared/business-logic";
 import { NewsCard } from "./news-card";
 
 type NewsListProps = {
